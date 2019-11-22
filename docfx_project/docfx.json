@@ -5,16 +5,17 @@
       {
         "files": [
           "azure/**.md",
-          "azure/**.yml",
-          "overview.md",
-          "index.md",
-          "toc.yml"
+          "azure/**.yml"
         ]
       },
       {
         "files": [
           "netfoundry/**.md",
-          "netfoundry/**.yml",
+          "netfoundry/**.yml"
+        ]
+      },
+      {
+        "files": [
           "overview.md",
           "index.md",
           "toc.yml"
