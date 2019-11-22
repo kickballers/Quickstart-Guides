@@ -1,0 +1,308 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/dsliwinski/Edge/quickstart-guides/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/intro.html",
+          "hash": "hwQLY6ReP09zG5ACzTuEZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "azure/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "azure/toc.html",
+          "hash": "MOEzvv/CBEQaxNRIMhWBVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/viaConsole.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/viaConsole.html",
+          "hash": "DT9mYEOxVE/juSM6BMEGeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/viaJenkins.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/viaJenkins.html",
+          "hash": "FQJrPDRbDzH8D3C6fC6rtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/viaResourceManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/viaResourceManager.html",
+          "hash": "WV0QY2HWxzY9DB67V+1ReA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/viaTerraform.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/viaTerraform.html",
+          "hash": "A3HPC7jkhycF6L3xoyXhGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Square.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Square.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/azureAppConnectivity-Azure-Apps.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/azureAppConnectivity-Azure-Apps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nflightbglogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nflightbglogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nflightbglogo_40.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nflightbglogo_40.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nflightbglogo_400.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nflightbglogo_400.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nflightbglogo_50.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nflightbglogo_50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/square100.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/square100.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/square50.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/square50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "YtuDI44PcPwdSwDsBTNBfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "netfoundry/client.md",
+      "output": {
+        ".html": {
+          "relative_path": "netfoundry/client.html",
+          "hash": "SVTr45Z0UuPYqdoJFRKcsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "netfoundry/fabric.md",
+      "output": {
+        ".html": {
+          "relative_path": "netfoundry/fabric.html",
+          "hash": "a/5/4feM91iMnJdhpFIX2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "netfoundry/gateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "netfoundry/gateway.html",
+          "hash": "IeBY9qRDibiXpbHHvLU3Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "netfoundry/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "netfoundry/intro.html",
+          "hash": "2H2dNNpt2h+8Ueo1ggV36w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "netfoundry/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "netfoundry/toc.html",
+          "hash": "fFhkF8ZzjZej7sdivNtUXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "3zdzY4zE+UIQcAt6m2dwUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 8
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

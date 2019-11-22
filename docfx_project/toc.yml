@@ -1,0 +1,7 @@
+
+- name: Azure Cloud
+  href: azure/
+  topicHref: azure/intro.md
+- name: NetFoundry Network
+  href: netfoundry/
+  topicHref: netfoundry/intro.md
