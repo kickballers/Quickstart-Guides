@@ -1,28 +1,8 @@
 {
-  "netfoundry/fabric.html": {
-    "href": "netfoundry/fabric.html",
-    "title": "Create a new network fabric | NetFoundry Quickstart Guides",
-    "keywords": "Create a new network fabric This section will show how to do that through NF Console via Console UI via REST API (Python)"
-  },
-  "netfoundry/intro.html": {
-    "href": "netfoundry/intro.html",
-    "title": "Overview | NetFoundry Quickstart Guides",
-    "keywords": "Overview This section will provide details on how to deploy NF Network Fabric and its components."
-  },
-  "azure/viaTerraform.html": {
-    "href": "azure/viaTerraform.html",
-    "title": "Introduction | NetFoundry Quickstart Guides",
-    "keywords": "Introduction This is a introduction"
-  },
   "azure/intro.html": {
     "href": "azure/intro.html",
     "title": "Use Case Overview | NetFoundry Quickstart Guides",
     "keywords": "Use Case Overview Users can reach application located in Azure's private vnets over Internet using secure tunnels from anywhere users have connections to the Internet as depicted in the diagram. Note The tunnels are encrypted and user-app sessions are hashed across 3 diverse paths by default. Use Case Diagram"
-  },
-  "azure/viaJenkins.html": {
-    "href": "azure/viaJenkins.html",
-    "title": "Introduction | NetFoundry Quickstart Guides",
-    "keywords": "Introduction This is a introduction"
   },
   "azure/viaResourceManager.html": {
     "href": "azure/viaResourceManager.html",
@@ -39,14 +19,34 @@
     "title": "Secure Connectivity to Cloud Applications | NetFoundry Quickstart Guides",
     "keywords": "Secure Connectivity to Cloud Applications Overview We will provide series of quickstart guides on how to quickly deploy and configure Secure Overlay Network via NetFoundry to connect Enterprise Mobile or Branch Site Users to Applications located in various public or private clouds. Use cases: Azure Cloud Connectivity via Console via Resource Manager via Terraform via Jenkins AWS Cloud Connectivity Coming soon Google Cloud Connectivity Coming soon Note Regardless of where Applications Users are trying to reach reside, NetFoundry (NF) Network Fabric needs to be provisioned and deployed first. Click NetFoundry Network to find more information on how to stand up the NF Network Fabric."
   },
-  "netfoundry/gateway.html": {
-    "href": "netfoundry/gateway.html",
-    "title": "NF Gateways Overview | NetFoundry Quickstart Guides",
-    "keywords": "NF Gateways Overview Introduction to Gateway Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
+  "azure/viaJenkins.html": {
+    "href": "azure/viaJenkins.html",
+    "title": "Introduction | NetFoundry Quickstart Guides",
+    "keywords": "Introduction This is a introduction"
+  },
+  "azure/viaTerraform.html": {
+    "href": "azure/viaTerraform.html",
+    "title": "Introduction | NetFoundry Quickstart Guides",
+    "keywords": "Introduction This is a introduction"
+  },
+  "netfoundry/fabric.html": {
+    "href": "netfoundry/fabric.html",
+    "title": "Create a new network fabric | NetFoundry Quickstart Guides",
+    "keywords": "Create a new network fabric This section will show how to do that through NF Console via Console UI via REST API (Python)"
   },
   "netfoundry/client.html": {
     "href": "netfoundry/client.html",
     "title": "NF Clients Overview | NetFoundry Quickstart Guides",
     "keywords": "NF Clients Overview Introduction to Client Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
+  },
+  "netfoundry/intro.html": {
+    "href": "netfoundry/intro.html",
+    "title": "Overview | NetFoundry Quickstart Guides",
+    "keywords": "Overview This section will provide details on how to deploy NF Network Fabric and its components."
+  },
+  "netfoundry/gateway.html": {
+    "href": "netfoundry/gateway.html",
+    "title": "NF Gateways Overview | NetFoundry Quickstart Guides",
+    "keywords": "NF Gateways Overview Introduction to Gateway Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
   }
 }

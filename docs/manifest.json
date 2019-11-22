@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/home/dsliwinski/Edge/quickstart-guides/docfx_project",
+  "source_base_path": "/home/dsliwinski/Edge/Quickstart-Guides/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "azure/intro.html",
-          "hash": "hwQLY6ReP09zG5ACzTuEZw=="
+          "hash": "Sc9Jlqblmbnae2XuU3Nktw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "azure/viaConsole.html",
-          "hash": "DT9mYEOxVE/juSM6BMEGeg=="
+          "hash": "unA1SRo7lyks1Jy8T5Dk+Q=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "azure/viaJenkins.html",
-          "hash": "FQJrPDRbDzH8D3C6fC6rtA=="
+          "hash": "T8LSIhO+KSCocltTgikWGQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "azure/viaResourceManager.html",
-          "hash": "WV0QY2HWxzY9DB67V+1ReA=="
+          "hash": "cY1HwOEntIsMhAg8bjl7qQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "azure/viaTerraform.html",
-          "hash": "A3HPC7jkhycF6L3xoyXhGg=="
+          "hash": "fUHwr1jCxomjAjdNMq1fGw=="
         }
       },
       "is_incremental": false,
@@ -178,7 +178,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "YtuDI44PcPwdSwDsBTNBfg=="
+          "hash": "QDjW07F3vEiDDr+OpkN8Bg=="
         }
       },
       "is_incremental": false,
@@ -190,7 +190,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/client.html",
-          "hash": "SVTr45Z0UuPYqdoJFRKcsw=="
+          "hash": "kRKr3AfUtIw+Y4mdUyKAyQ=="
         }
       },
       "is_incremental": false,
@@ -202,7 +202,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/fabric.html",
-          "hash": "a/5/4feM91iMnJdhpFIX2Q=="
+          "hash": "RzUy2tHGeRQRf/1f6tt1DA=="
         }
       },
       "is_incremental": false,
@@ -214,7 +214,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/gateway.html",
-          "hash": "IeBY9qRDibiXpbHHvLU3Pw=="
+          "hash": "3/ywb+afu8ur2kLEzQ74Hg=="
         }
       },
       "is_incremental": false,
@@ -226,7 +226,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/intro.html",
-          "hash": "2H2dNNpt2h+8Ueo1ggV36w=="
+          "hash": "Co8alLQXkk1EPgJyS5LvRA=="
         }
       },
       "is_incremental": false,
@@ -260,19 +260,14 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -281,10 +276,17 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 8
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },

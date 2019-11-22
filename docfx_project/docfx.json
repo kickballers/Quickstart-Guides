@@ -45,7 +45,7 @@
       "_appFaviconPath": "images/favicon.ico",
       "_enableSearch": true,
       "_gitContribute": {
-        "repo": "https://bitbucket.org/netfoundry/quickstart-guides",
+        "repo": "https://github.com/kickballers/Quickstart-Guides",
         "branch": "master"
       }
     }
