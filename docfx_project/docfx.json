@@ -5,11 +5,7 @@
       {
         "files": [
           "azure/**.md",
-          "azure/**.yml"
-        ]
-      },
-      {
-        "files": [
+          "azure/**.yml",
           "aws/**.md",
           "aws/**.yml"
         ]
