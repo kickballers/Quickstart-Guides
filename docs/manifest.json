@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "aws/intro.html",
-          "hash": "+rtDTKhl8eMwwt4xo2cn6Q=="
+          "hash": "nGaVweu0jwGKDLwc3v8Glw=="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,47 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "azure/createAppWan.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/createAppWan.html",
+          "hash": "NRteXbmC16E2Wd8WSnlTOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/createHostService.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/createHostService.html",
+          "hash": "rGv5PUD/Hm7SbQH4IXrDHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "azure/createNetworkService.md",
+      "output": {
+        ".html": {
+          "relative_path": "azure/createNetworkService.html",
+          "hash": "2jIWTKIXWJFEzGMl8Xt8AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "azure/intro.md",
       "output": {
         ".html": {
           "relative_path": "azure/intro.html",
-          "hash": "Sc9Jlqblmbnae2XuU3Nktw=="
+          "hash": "asRi35kobayj/OgBv2TbnA=="
         }
       },
       "is_incremental": false,
@@ -54,55 +90,29 @@
       "output": {
         ".html": {
           "relative_path": "azure/toc.html",
-          "hash": "MOEzvv/CBEQaxNRIMhWBVw=="
+          "hash": "34A7+7kllbhVNmERTKrwtw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "azure/viaConsole.md",
+      "type": "Resource",
+      "source_relative_path": "images/NetworkMopMenu.png",
       "output": {
-        ".html": {
-          "relative_path": "azure/viaConsole.html",
-          "hash": "unA1SRo7lyks1Jy8T5Dk+Q=="
+        "resource": {
+          "relative_path": "images/NetworkMopMenu.png"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "azure/viaJenkins.md",
+      "type": "Resource",
+      "source_relative_path": "images/NetworkMopMenuGreen.png",
       "output": {
-        ".html": {
-          "relative_path": "azure/viaJenkins.html",
-          "hash": "T8LSIhO+KSCocltTgikWGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "azure/viaResourceManager.md",
-      "output": {
-        ".html": {
-          "relative_path": "azure/viaResourceManager.html",
-          "hash": "cY1HwOEntIsMhAg8bjl7qQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "azure/viaTerraform.md",
-      "output": {
-        ".html": {
-          "relative_path": "azure/viaTerraform.html",
-          "hash": "fUHwr1jCxomjAjdNMq1fGw=="
+        "resource": {
+          "relative_path": "images/NetworkMopMenuGreen.png"
         }
       },
       "is_incremental": false,
@@ -202,7 +212,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "QDjW07F3vEiDDr+OpkN8Bg=="
+          "hash": "gmSty2WeMB6v/AnQvfxUhA=="
         }
       },
       "is_incremental": false,
@@ -214,7 +224,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/client.html",
-          "hash": "kRKr3AfUtIw+Y4mdUyKAyQ=="
+          "hash": "QHDYh4evoZXUHhtH8cOzCA=="
         }
       },
       "is_incremental": false,
@@ -226,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/fabric.html",
-          "hash": "RzUy2tHGeRQRf/1f6tt1DA=="
+          "hash": "pLeqSvgejpbRLaGgraG7LQ=="
         }
       },
       "is_incremental": false,
@@ -238,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/gateway.html",
-          "hash": "3/ywb+afu8ur2kLEzQ74Hg=="
+          "hash": "Tx7puXBIqWVVYWVvkGyxCA=="
         }
       },
       "is_incremental": false,
@@ -250,7 +260,7 @@
       "output": {
         ".html": {
           "relative_path": "netfoundry/intro.html",
-          "hash": "Co8alLQXkk1EPgJyS5LvRA=="
+          "hash": "RapNMafCgint94Ya2myi9Q=="
         }
       },
       "is_incremental": false,
@@ -290,13 +300,6 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -304,11 +307,18 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 11,
-          "skipped_file_count": 11
+          "total_file_count": 10,
+          "skipped_file_count": 9
         }
       }
     },
