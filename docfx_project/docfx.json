@@ -12,6 +12,12 @@
       },
       {
         "files": [
+          "api/**.md",
+          "api/**.yml"
+        ]
+      },
+      {
+        "files": [
           "netfoundry/**.md",
           "netfoundry/**.yml"
         ]

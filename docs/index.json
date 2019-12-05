@@ -1,52 +1,62 @@
 {
-  "azure/createNetworkService.html": {
-    "href": "azure/createNetworkService.html",
-    "title": "Introduction | NetFoundry Quickstart Guides",
-    "keywords": "Introduction This is a introduction"
-  },
-  "azure/createAppWan.html": {
-    "href": "azure/createAppWan.html",
-    "title": "Introduction | NetFoundry Quickstart Guides",
-    "keywords": "Introduction This is a introduction"
-  },
-  "azure/createHostService.html": {
-    "href": "azure/createHostService.html",
-    "title": "Creating Client Service | NetFoundry Quickstart Guides",
-    "keywords": "Creating Client Service Important Assumption is that the NF Fabric is already up and the NF Client is installed. via Console UI via REST API (Python)"
-  },
-  "azure/intro.html": {
-    "href": "azure/intro.html",
-    "title": "Use Case Overview | NetFoundry Quickstart Guides",
-    "keywords": "Use Case Overview Users can reach application located in Azure's private vnets over Internet using secure tunnels from anywhere users have connections to the Internet as depicted in the diagram. Note The tunnels are encrypted and user-app sessions are hashed across 3 diverse paths by default. Use Case Diagram"
-  },
-  "netfoundry/fabric.html": {
-    "href": "netfoundry/fabric.html",
-    "title": "Create a new network fabric | NetFoundry Quickstart Guides",
-    "keywords": "Create a new network fabric This section will show how to do that through NF Console via Console UI via REST API (Python) Click on Network Menu Click on \"+\" button in the top right corner to create a network Give it a name, e.g. \"DemoNet01\" Wait until the icon network turns green."
-  },
-  "aws/intro.html": {
-    "href": "aws/intro.html",
-    "title": "Use Case Overview | NetFoundry Quickstart Guides",
-    "keywords": "Use Case Overview Users can reach application located in AWS's private subnets over Internet using secure tunnels from anywhere users have connections to the Internet as depicted in the diagram. Note The tunnels are encrypted and user-app sessions are hashed across 3 diverse paths by default. Use Case Diagram"
-  },
-  "netfoundry/client.html": {
-    "href": "netfoundry/client.html",
-    "title": "NF Clients Overview | NetFoundry Quickstart Guides",
-    "keywords": "NF Clients Overview Introduction to Client Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
-  },
-  "netfoundry/gateway.html": {
-    "href": "netfoundry/gateway.html",
-    "title": "NF Gateways Overview | NetFoundry Quickstart Guides",
-    "keywords": "NF Gateways Overview Introduction to Gateway Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
+  "api/intro.html": {
+    "href": "api/intro.html",
+    "title": "Overview | NetFoundry Quickstart Guides",
+    "keywords": "Overview In this section, we are showing the snippets of actual code to call NF APIs to create various components of the NF Network. We will provide this for various languages."
   },
   "netfoundry/intro.html": {
     "href": "netfoundry/intro.html",
     "title": "Overview | NetFoundry Quickstart Guides",
     "keywords": "Overview This section will provide details on how to deploy NF Network Fabric and its components."
   },
+  "netfoundry/gateway.html": {
+    "href": "netfoundry/gateway.html",
+    "title": "NF Gateways Overview | NetFoundry Quickstart Guides",
+    "keywords": "NF Gateways Overview Introduction to Gateway Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
+  },
+  "netfoundry/client.html": {
+    "href": "netfoundry/client.html",
+    "title": "NF Clients Overview | NetFoundry Quickstart Guides",
+    "keywords": "NF Clients Overview Introduction to Client Endpoints NetFoundry Client FAQ Troubleshoot Client and Gateway Registration Errors"
+  },
+  "azure/intro.html": {
+    "href": "azure/intro.html",
+    "title": "Use Case Overview | NetFoundry Quickstart Guides",
+    "keywords": "Use Case Overview Users can reach application located in Azure's private vnets over Internet using secure tunnels from anywhere users have connections to the Internet as depicted in the diagram. Note The tunnels are encrypted and user-app sessions are hashed across 3 diverse paths by default. Use Case Diagram"
+  },
+  "azure/createAppWan.html": {
+    "href": "azure/createAppWan.html",
+    "title": "Introduction | NetFoundry Quickstart Guides",
+    "keywords": "Introduction This is a introduction"
+  },
+  "azure/createNetworkService.html": {
+    "href": "azure/createNetworkService.html",
+    "title": "Introduction | NetFoundry Quickstart Guides",
+    "keywords": "Introduction This is a introduction"
+  },
+  "aws/intro.html": {
+    "href": "aws/intro.html",
+    "title": "Overview | NetFoundry Quickstart Guides",
+    "keywords": "Overview In this section, we are showing the snippets of actual code to call NF API to create various components of the NF Network. We will provide this for various languages."
+  },
   "index.html": {
     "href": "index.html",
     "title": "Secure Connectivity to Cloud Applications | NetFoundry Quickstart Guides",
     "keywords": "Secure Connectivity to Cloud Applications Overview We will provide series of quickstart guides on how to quickly deploy and configure Secure Overlay Network via NetFoundry to connect Enterprise Mobile or Branch Site Users to Applications located in various public or private clouds. Use cases: Azure Cloud Connectivity Create App Service Create Network Service Create App/Net Segmentation AWS Cloud Connectivity Coming soon Google Cloud Connectivity Coming soon Note Regardless of where Applications Users are trying to reach reside, NetFoundry (NF) Network Fabric needs to be provisioned and deployed first. Click NetFoundry Network to find more information on how to stand up the NF Network Fabric."
+  },
+  "api/python.html": {
+    "href": "api/python.html",
+    "title": "Python 3 | NetFoundry Quickstart Guides",
+    "keywords": "Python 3 Module to wrap NF REST CRUD methods Module to get session token #!/usr/bin/python3 import requests import json import os import logging import time import datetime def clear_log(): logfile = open('logoutput.txt', 'w') logfile.close() def writelog(message): logfile = open('logoutput.txt', 'a+') logfile.write(str(datetime.datetime.now()) + ' ' + str(message) + '\\n') logfile.close() # Function to create headers and execute called http method def nf_req(req, method, token=None): verify = True timeout = 15 count = 0 handle = -1 if token is None: headers = {'content-type': 'application/json'} elif method == 'get': headers = {'Authorization': 'Bearer ' + token, 'content-type': 'application/json', 'Cache-Control': 'no-cache'} else: headers = {'Authorization': 'Bearer ' + token, 'content-type': 'application/json'} if (method == 'post') and (token is None): while count < 3: try: handle = requests.post(req[0], data=req[1], timeout=timeout, verify=verify) writelog(str(handle.status_code)) return handle.json() except Exception as e: writelog(e) time.sleep(2) count += 1 continue elif method == 'post': while count < 3: try: print(count) handle = requests.post(req[0], data=req[1], timeout=timeout, headers=headers, verify=verify) writelog(str(handle.status_code)) # print handle.raw.data # print handle.content return handle.json() except Exception as e: writelog(e) print(e) time.sleep(2) count += 1 continue elif method == 'get': while count < 3: try: handle = requests.get(req, timeout=timeout, headers=headers, verify=verify) writelog(str(handle.status_code)) return handle.json() except Exception as e: writelog(e) time.sleep(2) count += 1 continue elif method == 'delete': while count < 3: try: handle = requests.delete(req, timeout=timeout, headers=headers, verify=verify) writelog(str(handle.status_code)) return handle except Exception as e: writelog(e) time.sleep(2) count += 1 continue elif method == 'put': while count < 3: try: handle = requests.put(req[0], data=req[1], timeout=timeout, headers=headers, verify=verify) writelog(str(handle.status_code)) return handle.json() except Exception as e: writelog(e) time.sleep(2) count += 1 continue return handle # NF Get API operation def get_data(url, token): req = url data = nf_req(req, 'get', token) return data # NF Delete API operation def delete_nf(url, token): req = url data = nf_req(req, 'delete', token) return data # NF Update API operation def put_data(url, values, token): data = json.dumps(values) # print data req = (url, data) # sys.exit(0) put_return = nf_req(req, 'put', token) return put_return # NF Create API operation def post_data(url, values, token): data = json.dumps(values) # print data req = (url, data) post_return = nf_req(req, 'post', token) return post_return if __name__ == '__main__': pass #!/usr/bin/python3 import os import logging import configparser import datetime import nf_requests as nfreq def clear_log(): logfile = open('logoutput.txt', 'w') logfile.close() def writelog(message): logfile = open('logoutput.txt', 'a+') logfile.write(str(datetime.datetime.now()) + ' ' + str(message) + '\\n') logfile.close() def get_token(env, client_id=None, client_secret=None): if (not client_id) and (not client_secret): config = configparser.ConfigParser() config.sections() config.read(os.path.expanduser('~/.env')) client_id = config[env]['clientId'] client_secret = config[env]['secret'] data = {\"client_id\": client_id, \"client_secret\": client_secret, \"audience\": \"https://gateway.\" + env + \".netfoundry.io/\", \"grant_type\": \"client_credentials\"} url = 'https://netfoundry-' + env + '.auth0.com/oauth/token' req = (url, data) token = nfreq.nf_req(req, 'post') return token['access_token'] if __name__ == '__main__': # Get Netfoundry Console token print(get_token('sandbox'))"
+  },
+  "azure/createHostService.html": {
+    "href": "azure/createHostService.html",
+    "title": "Creating Client Service | NetFoundry Quickstart Guides",
+    "keywords": "Creating Client Service Important Assumption is that the NF Fabric is already up and the NF Client is installed. via Console UI via REST API (Python)"
+  },
+  "netfoundry/fabric.html": {
+    "href": "netfoundry/fabric.html",
+    "title": "Create a new network fabric | NetFoundry Quickstart Guides",
+    "keywords": "Create a new network fabric This section will show how to do that through NF Console via Console UI via REST API (Python) Click on Network Menu Click on \"+\" button in the top right corner to create a network Give it a name, e.g. \"DemoNet01\" Wait until the icon network turns green. Get MOP Session Token"
   }
 }
